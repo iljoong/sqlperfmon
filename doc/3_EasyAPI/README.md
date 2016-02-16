@@ -12,7 +12,7 @@
 	* `perf`
     * `mon`
 
-4. add 3 js files in wwwroot\api folder
+4. add 4 js files in wwwroot\api folder
 	* `config.js`
     * `stat.js`
     * `perf.js`

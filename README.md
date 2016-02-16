@@ -4,9 +4,9 @@ SQLPerMon is a performance monitoring sample app for Azure SQL Database
 
 It has 3 dashboards:
 
-* Stat: Performance stats of last 60 mins (source form `master.sys.resource_stats`)
-* Perf: Daily performance stats (source from `database.sys.dm_db_resource_stats`) 
-* Mon: Daily SLO & scale recommnedation (refer https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance-guidance/)
+* _Stat_: Performance stats of last 60 mins (source form `master.sys.resource_stats`)
+* _Perf_: Daily performance stats (source from `database.sys.dm_db_resource_stats`) 
+* _Mon_: Daily SLO & scale recommnedation (refer https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance-guidance/)
 
 Note: 
 
@@ -15,7 +15,6 @@ Note:
 
 ![SQLMonWeb](/doc/pix/azsqlmonweb01.png)
 
-* Angularjs based Web App on Azure
 * This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
 
