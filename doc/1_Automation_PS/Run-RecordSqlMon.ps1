@@ -62,7 +62,7 @@ workflow Run-RecordSqlMon
             ,(COUNT(database_name) - SUM(CASE WHEN avg_log_write_percent >= 100 THEN 1 ELSE 0 END) * 1.0) / COUNT(database_name) AS 'Up_Log_Write_Fit' `
             ,(COUNT(database_name) - SUM(CASE WHEN avg_data_io_percent >= 100 THEN 1 ELSE 0 END) * 1.0) / COUNT(database_name) AS 'Up_Data_IO_Fit' `
 		FROM master.sys.resource_stats `
-		WHERE database_name = '$using:Database' AND start_time > DATEADD(day, -7, GETDATE());"
+		WHERE database_name = '$using:Database' AND start_time > DATEADD(day, -1, GETDATE());"
 		
 		Write-Output $sqlcmd
 		

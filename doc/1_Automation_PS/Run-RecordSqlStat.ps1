@@ -63,7 +63,7 @@ workflow Run-RecordSqlStat
 		    avg(max_worker_percent) AS davg_max_worker_percent, `
 		    max(max_worker_percent) AS dmax_max_worker_percent `
 		FROM master.sys.resource_stats `
-		WHERE database_name = '$using:Database' AND start_time > DATEADD(day, -7, GETDATE());"
+		WHERE database_name = '$using:Database' AND start_time > DATEADD(day, -1, GETDATE());"
 		
 		Write-Output $sqlcmd
 		
