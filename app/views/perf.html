@@ -1,0 +1,14 @@
+<h3>SQL Database(ilkimdbjpe) Daily Performance Status chart</h3>
+<div ng-if="!data.length">
+    <center><img src="../images/hourglass.gif"></img></center>
+</div>
+<div ng-if="data.length">
+    <canvas id="line" class="chart chart-line" chart-data="data"
+    chart-labels="labels" chart-legend="true" chart-series="series"
+    chart-click="onClick" >
+    </canvas>
+
+    <canvas id="line2" class="chart chart-line" chart-data="data1"
+    chart-labels="labels1" chart-legend="true" chart-series="series1">
+    </canvas>
+</div>
