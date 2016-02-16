@@ -24,7 +24,6 @@ version 0.15.1.
 2. [Setup AAD](/doc/2_AAD/README.md)
 3. [Setup API app](/doc/3_EasyAPI/README.md)
 
-
 ## Build
 
 * ` npm install `
@@ -38,6 +37,10 @@ version 0.15.1.
 ## Publish to Azure
 
 * ` grunt publish `
+
+## Architecture
+
+![SQLMonWeb](/doc/pix/architecture.png)
 
 ## Terms & Conditions
 * MIT License
