@@ -20,9 +20,9 @@ version 0.15.1.
 
 ## How to setup
 
-1. [Setup Automation](/doc/1_Automation_PS/README.md)
-2. [Setup AAD](/doc/2_AAD/README.md)
-3. [Setup API app](/doc/3_EasyAPI/README.md)
+1. [Setup Automation](/doc/1_Automation_PS/)
+2. [Setup AAD](/doc/2_AAD)
+3. [Setup API app](/doc/3_EasyAPI/)
 4. Update tenant & clientId in [app/scripts/config.js](app/scripts/config.js)
 
 ## Build
