@@ -16,16 +16,22 @@
         </tr>
         <tr ng-repeat="item in data">
             <td>{{item.timestamp | date:'yyyy-MM-dd HH:mm:ss' :'+0900'}}</td>
-            <td>{{item.Down_CPU_Fit | number:3}}</td>
-            <td>{{item.Down_Log_Write_Fit | number:3}}</td>
-            <td>{{item.Down_Data_IO_Fit | number:3}}</td>
-            <td>{{item.Up_CPU_Fit | number:3}}</td>
-            <td>{{item.Up_Log_Write_Fit | number:3}}</td>
-            <td>{{item.Up_Data_IO_Fit | number:3}}</td>
+            <td ng-style="item.Down_CPU_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Down_CPU_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Down_CPU_Fit * 100 | number:2}}%</td>
+            <td ng-style="item.Down_Log_Write_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Down_Log_Write_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Down_Log_Write_Fit * 100 | number:2}}%</td>
+            <td ng-style="item.Down_Data_IO_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Down_Data_IO_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Down_Data_IO_Fit * 100 | number:2}}%</td>
+            <td ng-style="item.Up_CPU_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Up_CPU_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Up_CPU_Fit* 100 | number:2}}%</td>
+            <td ng-style="item.Up_Log_Write_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Up_Log_Write_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Up_Log_Write_Fit * 100 | number:2}}%</td>
+            <td ng-style="item.Up_Data_IO_Fit < 0.9990 && {'background-color': 'red'} ||
+                    item.Up_Data_IO_Fit < 0.9999 && {'background-color': 'yellow'}">{{item.Up_Data_IO_Fit * 100 | number:2}}%</td>
             <td>{{getRecommend(item.Down_CPU_Fit, item.Down_Log_Write_Fit, item.Down_Data_IO_Fit,
                 item.Up_CPU_Fit, item.Up_Log_Write_Fit, item.Up_Data_IO_Fit )}}</td>
         </tr>
     </table>
 </div>
-<div><a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance-guidance/">
+<div>How to read this data: <a href="https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance-guidance/">
 https://azure.microsoft.com/en-us/documentation/articles/sql-database-performance-guidance/</a></div>
