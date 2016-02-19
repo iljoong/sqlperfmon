@@ -17,8 +17,8 @@
 
 4. test using following parameters
 
-	* `Server = <irasu89u5c.database.windows.net>`
-	* `Database = <ilkimdbjpe>`
+	* `Server = <servername.database.windows.net>`
+	* `Database = <dbname>`
 	* `Table = sqldbstat`
 	* `Credential = sqlcred`	
 	* `BoundValue = 40 (40% performance bound)` for `Run-RecordSqlMon.ps1`
