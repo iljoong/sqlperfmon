@@ -12,11 +12,12 @@ Note:
 
 * Data for 'Perf' and 'Mon' are generated via Azure Automation and can be accessed by API app.
 * API app is protected by Azure AD and can be accessed with right credential.
-
-![SQLMonWeb](/doc/pix/azsqlmonweb01.png)
-
 * This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
 version 0.15.1.
+
+_click to view demo_
+
+[![SQLMonWeb](https://img.youtube.com/vi/Fe4GNGS_0kc/0.jpg)](https://youtu.be/Fe4GNGS_0kc)
 
 ## How to setup
 
