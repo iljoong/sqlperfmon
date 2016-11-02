@@ -1,6 +1,6 @@
 'use strict';
 
-var sqldbapiurl = "https://azsqlmon.ilkimase.p.azurewebsites.net";
+var sqldbapiurl = "<api url>";
 
 angular.module('sqlmonAppApp')
   .controller('MonCtrl',['$scope', '$http', 'adalAuthenticationService', '$filter',

@@ -7,7 +7,7 @@
  * # ChartCtrl
  * Controller of the angAppApp
  */
-var sqldbapiurl = "https://azsqlmon.ilkimase.p.azurewebsites.net";
+var sqldbapiurl = "<api url>";
 
 /*
 [
